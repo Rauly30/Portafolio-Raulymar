@@ -1015,7 +1015,7 @@ nav {
   background-image: url(https://i.pinimg.com/originals/a4/04/a4/a404a481f48045b1a24cdbba5cc8d350.gif);
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  background-attachment:local;
   text-align: center;
   color: var(--dark-color);
 }
