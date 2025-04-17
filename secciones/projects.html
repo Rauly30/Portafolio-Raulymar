@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos | Raulymar de Abreu</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="index.html#sobre-mi">Sobre Mí</a></li>
+                    <li><a href="resume.html">Currículum</a></li>
+                    <li><a href="projects.html" class="active">Proyectos</a></li>
+                    <li><a href="index.html#contacto" class="contact-btn">Contacto</a></li>
+                </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Mis Proyectos</h1>
+            <div class="breadcrumbs">
+                <a href="index.html">Inicio</a> / <span>Proyectos</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects-showcase">
+        <div class="container">
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="design">Diseño</button>
+                <button class="filter-btn" data-filter="management">Gestión</button>
+                <button class="filter-btn" data-filter="programming">Programación</button>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-item" data-category="design">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="/placeholder.svg?height=400&width=600" alt="Diseño de Carteles">
+                            <div class="project-overlay">
+                                <a href="#project-1" class="view-project">Ver Detalles</a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Diseño de Carteles</h3>
+                            <div class="project-tags">
+                                <span>Diseño Gráfico</span>
+                                <span>Publicidad</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-item" data-category="management">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="/placeholder.svg?height=400&width=600" alt="Gestión de Inventario">
+                            <div class="project-overlay">
+                                <a href="#project-2" class="view-project">Ver Detalles</a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Gestión de Inventario</h3>
+                            <div class="project-tags">
+                                <span>Excel</span>
+                                <span>Gestión</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-item" data-category="programming">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="/placeholder.svg?height=400&width=600" alt="Aplicación Python">
+                            <div class="project-overlay">
+                                <a href="#project-3" class="view-project">Ver Detalles</a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Aplicación Python</h3>
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>Programación</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-item" data-category="design">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="/placeholder.svg?height=400&width=600" alt="Diseño de Flyers">
+                            <div class="project-overlay">
+                                <a href="#project-4" class="view-project">Ver Detalles</a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Diseño de Flyers</h3>
+                            <div class="project-tags">
+                                <span>Diseño Gráfico</span>
+                                <span>Marketing</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-item" data-category="programming">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="/placeholder.svg?height=400&width=600" alt="Página Web Personal">
+                            <div class="project-overlay">
+                                <a href="#project-5" class="view-project">Ver Detalles</a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Página Web Personal</h3>
+                            <div class="project-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-item" data-category="management">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="/placeholder.svg?height=400&width=600" alt="Sistema de Gestión">
+                            <div class="project-overlay">
+                                <a href="#project-6" class="view-project">Ver Detalles</a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Sistema de Gestión</h3>
+                            <div class="project-tags">
+                                <span>Ofimática</span>
+                                <span>Organización</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Details Modals -->
+    <div id="project-1" class="project-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img src="/placeholder.svg?height=600&width=800" alt="Diseño de Carteles">
+                </div>
+                <div class="modal-info">
+                    <h2>Diseño de Carteles</h2>
+                    <div class="project-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">Categoría:</span>
+                            <span class="meta-value">Diseño Gráfico</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Cliente:</span>
+                            <span class="meta-value">Lubridoca</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Fecha:</span>
+                            <span class="meta-value">2020</span>
+                        </div>
+                    </div>
+                    <div class="project-description">
+                        <h3>Descripción del Proyecto</h3>
+                        <p>Creación de carteles y material publicitario para diversos negocios locales durante mi experiencia como secretaria en Lubridoca. El proyecto incluyó el diseño de carteles promocionales, banners y material impreso para campañas de marketing.</p>
+                        <p>Utilicé software de diseño para crear composiciones visuales atractivas que comunicaran efectivamente los mensajes de la empresa y atrajeran a potenciales clientes.</p>
+                    </div>
+                    <div class="project-tools">
+                        <h3>Herramientas Utilizadas</h3>
+                        <ul>
+                            <li>Software de diseño gráfico</li>
+                            <li>Herramientas de composición visual</li>
+                            <li>Técnicas de diseño publicitario</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="project-2" class="project-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img src="/placeholder.svg?height=600&width=800" alt="Gestión de Inventario">
+                </div>
+                <div class="modal-info">
+                    <h2>Gestión de Inventario</h2>
+                    <div class="project-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">Categoría:</span>
+                            <span class="meta-value">Gestión</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Cliente:</span>
+                            <span class="meta-value">Lubridoca</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Fecha:</span>
+                            <span class="meta-value">2019-2021</span>
+                        </div>
+                    </div>
+                    <div class="project-description">
+                        <h3>Descripción del Proyecto</h3>
+                        <p>Sistema de gestión de inventario implementado utilizando herramientas ofimáticas para optimizar el control de productos. Este proyecto incluyó la creación de hojas de cálculo automatizadas para el seguimiento de inventario, generación de informes y alertas de stock.</p>
+                        <p>El sistema permitió mejorar la eficiencia en el manejo de inventario, reducir errores y optimizar los procesos de compra y almacenamiento.</p>
+                    </div>
+                    <div class="project-tools">
+                        <h3>Herramientas Utilizadas</h3>
+                        <ul>
+                            <li>Microsoft Excel</li>
+                            <li>Fórmulas y funciones avanzadas</li>
+                            <li>Tablas dinámicas</li>
+                            <li>Macros básicas</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="project-3" class="project-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img src="/placeholder.svg?height=600&width=800" alt="Aplicación Python">
+                </div>
+                <div class="modal-info">
+                    <h2>Aplicación Python</h2>
+                    <div class="project-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">Categoría:</span>
+                            <span class="meta-value">Programación</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Institución:</span>
+                            <span class="meta-value">Academia de Software Cadi F1</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Fecha:</span>
+                            <span class="meta-value">2023</span>
+                        </div>
+                    </div>
+                    <div class="project-description">
+                        <h3>Descripción del Proyecto</h3>
+                        <p>Desarrollo de una aplicación utilizando Python como parte de mi formación en la Academia de Software Cadi F1. La aplicación implementa conceptos fundamentales de programación y estructuras de datos para resolver problemas prácticos.</p>
+                        <p>Este proyecto me permitió aplicar los conocimientos adquiridos durante el curso de Fundamentos de Programación con Python y desarrollar habilidades en el diseño de algoritmos y solución de problemas.</p>
+                    </div>
+                    <div class="project-tools">
+                        <h3>Herramientas Utilizadas</h3>
+                        <ul>
+                            <li>Python</li>
+                            <li>Estructuras de datos</li>
+                            <li>Algoritmos</li>
+                            <li>Control de versiones con Git</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="cta">
+        <div class="container">
+            <h2>¿Tienes un proyecto en mente?</h2>
+            <div class="cta-buttons">
+                <a href="index.html#contacto" class="primary-btn">Contáctame</a>
+                <a href="resume.html" class="secondary-btn white-btn">Ver Currículum</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h2>Raulymar De Abreu</h2>
+                    <p>Estudiante de Ingeniería en Sistemas apasionada por la tecnología, el diseño y la resolución de problemas.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html" class="active">Inicio</a></li>
+                        <li><a href="#sobre-mi">Sobre Mí</a></li>
+                        <li><a href="resume.html">Currículum</a></li>
+                        <li><a href="projects.html">Proyectos</a></li>
+                    </ul>
+                </div> 
+                <div class="footer-section">
+                    <h4>Mis Redes Sociales</h4>
+                    <div class="social-links">  
+                        <a href="https://wa.me/584127360431" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/rau.deabr/" class="social-icon"><i class="fab fa-instagram"></i></a>                
+                        <a href="https://www.linkedin.com/in/raulydeabreunieves" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/Rauly30" class="social-icon"><i class="fab fa-github"></i></a>
+                    </div>
+                    <br>
+                    <h4>Growing Company (RauDie)</h4>
+                    <div class="social-links">  
+                        <a href="https://www.tiktok.com/@raudie.dev" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://www.instagram.com/raudie.dev/" class="social-icon"><i class="fab fa-instagram"></i></a>                
+                        <a href="https://raulymar.com" class="social-icon"><i class="fas fa-globe"></i></a>
+                    </div>
+                </div>    
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Raulymar de Abreu. Todos los derechos reservados.</p> 
+            </div>
+        </div>
+    </footer>
+    <div class="floating-buttons">
+        <a href="https://wa.me/584127360431" class="floating-btn whatsapp-btn" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>  
+
+    <script src="../script.js"></script>
+</body>
+</html>
