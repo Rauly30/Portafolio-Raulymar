@@ -1011,7 +1011,7 @@ nav {
 /* CTA Section */
 .cta .container {
   position: relative;
-  padding: 70px 0;
+  padding: 10px 0;
   background-image: url(https://i.pinimg.com/originals/a4/04/a4/a404a481f48045b1a24cdbba5cc8d350.gif);
   background-size: cover;
   background-position: center;
@@ -1624,10 +1624,11 @@ footer {
   }
 
   .notification {
-    right: 10px;
-    bottom: 90px;
+    right: 80px;
+    bottom: 60px;
     width: calc(100% - 80px);
-    max-width: 280px;
+    margin-right: 10px;
+    max-width: 220px;
   }
 }
 

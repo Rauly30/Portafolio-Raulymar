@@ -266,17 +266,32 @@ function setupFloatingButtonsNotifications() {
     }, 500)
   })
 
-  // Also show notification on click for mobile devices
-  whatsappBtn.addEventListener("click", () => {
-    // Don't prevent default so the link still works
-    console.log("WhatsApp button clicked")
-    clearTimeout(notificationTimeout)
-    whatsappNotification.classList.add("show")
+  // Modified click event for mobile devices
+  whatsappBtn.addEventListener("click", (e) => {
+    // Check if it's a mobile device
+    const isMobile = window.innerWidth <= 768
+    
+    if (isMobile) {
+      e.preventDefault()
+      console.log("WhatsApp button clicked on mobile")
+      clearTimeout(notificationTimeout)
+      whatsappNotification.classList.add("show")
 
-    // Hide notification after 3 seconds
-    setTimeout(() => {
-      whatsappNotification.classList.remove("show")
-    }, 3000)
+      // Hide notification after 2 seconds and then follow the link
+      setTimeout(() => {
+        whatsappNotification.classList.remove("show")
+        window.location.href = whatsappBtn.href
+      }, 2000)
+    } else {
+      // For desktop, keep the original behavior but hide after 3 seconds
+      console.log("WhatsApp button clicked on desktop")
+      clearTimeout(notificationTimeout)
+      whatsappNotification.classList.add("show")
+
+      setTimeout(() => {
+        whatsappNotification.classList.remove("show")
+      }, 3000)
+    }
   })
 
   // Prevent notification from disappearing when mouse is over it
@@ -301,6 +316,3 @@ function setupFloatingButtonsNotifications() {
     }, 2000)
   }, 1500)
 }
-
-// Show WhatsApp notification
-whatsappNotification.classList.add("show")
